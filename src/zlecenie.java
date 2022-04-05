@@ -8,7 +8,6 @@ public class zlecenie {
     public String toString() {
         String retstr = "Zlecenie nr: "+numer+" numer cylindra: "+nr_cylindra+" czas zgłoszenia: " + czas_zgloszenia;
             if(deadline!=-1)retstr += ("Deadline: "+deadline);
-            retstr += "\n";
             return retstr;
     }
 

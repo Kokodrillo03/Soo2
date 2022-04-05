@@ -13,9 +13,11 @@ public class main {
         int czas = Integer.parseInt(scan.nextLine());
 
         ArrayList<zlecenie> zlecenia = Kolejki.kolejka_bez_priorytetów(dlug,cyl,czas);
-        System.out.println(zlecenia);
+        for(zlecenie z :zlecenia)
+            System.out.println(z);
         System.out.println(Algorytmy.FCFS(zlecenia));
         System.out.println(Algorytmy.SSTF(zlecenia));
+        System.out.println(Algorytmy.CSCAN(zlecenia,cyl));
 
     }
 }
