@@ -13,4 +13,10 @@ public class Kolejki {
         }
         return zlecenia;
     }
+    public static void Dodaj_priorytety(ArrayList<zlecenie> zlecenia, int czestosc, int czas_na_wykonanie_procesu){
+        for(zlecenie z : zlecenia){
+            int temp = random.nextInt(0,czestosc);
+            if (temp==0)z.setDeadline(z.getCzas_zgloszenia()+czas_na_wykonanie_procesu);
+        }
+    }
 }
